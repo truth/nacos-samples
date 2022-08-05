@@ -1,0 +1,21 @@
+version: '3.0'
+services:
+  dubbo-admin:
+    image: apache/dubbo-admin
+    ports:
+      - "9001:8080"
+    networks:
+      swarm-overlay: {}
+    environment:
+      - admin.root.user.name=root
+      - admin.root.user.password=xxx
+      - admin.registry.address='nacos://xx:8848?group=DEFAULT_GROUP&namespace=test'
+      - admin.config-center='nacos://xx:8848?group=DEFAULT_GROUP&namespace=test'
+      - admin.metadata-report.address='nacos://xx:8848?group=dubbo&namespace=test'
+    restart: on-failure
+    cpu_count: 1
+    mem_limit: 512m
+networks:
+  swarm-overlay:
+    external: true
+    
