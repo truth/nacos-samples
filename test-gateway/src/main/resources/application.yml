@@ -1,0 +1,19 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: nacos-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      routes:
+        - id: consumer-server
+          uri: lb://demo-consumer
+          predicates:
+            - Path=/consumer/**
+        - id: provider-server
+          uri: lb://demo-provider
+          predicates:
+            - Path=/provider/**

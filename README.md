@@ -15,6 +15,22 @@ Spring Cloud Alibaba 参考文档(**hoxton版**)
 
 https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/en-us/index.html
 
+## provider-consumer-gateway 流程说明
+
+provider : http://localhost:8082/provider/echo/{string}
+
+consumer: http://localhost:8081/consumer/{string}  使用openfeign 访问provider
+
+gateway: 
+http://localhost:9000/consumer/**  路由到consumer上。 
+
+http://localhost:9000/provider/**  路由到provider上。 
+
+```text
+gateway -->consumer-->provider
+        -->provider 
+```
+
 
 
 参考文章如下 (收录整理时间2022年8月5日),文档有时效，注意查看对应时间和版本信息

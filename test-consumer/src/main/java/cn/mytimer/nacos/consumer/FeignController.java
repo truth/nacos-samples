@@ -20,8 +20,8 @@ public class FeignController {
      * @param string 请求入参
      * @return 返回参数
      */
-    @RequestMapping(value = "/consumer/{string}",method = RequestMethod.GET)
-    public String consumer(@PathVariable String string){
+    @RequestMapping(value = "/consumer/echo/{string}",method = RequestMethod.GET)
+    public String echo(@PathVariable String string){
         return providerClient.hello(string)+",consumer!";
     }
 

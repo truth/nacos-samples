@@ -30,6 +30,7 @@
         <module>test-provider</module>
         <module>test-consumer</module>
         <module>test-config</module>
+        <module>test-gateway</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -62,15 +63,6 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
