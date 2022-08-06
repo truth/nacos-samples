@@ -1,4 +1,4 @@
-### nacos-samples
+## nacos-samples
 
 本实例使用相关技术版本列表
 
@@ -33,10 +33,17 @@ gateway -->consumer-->provider
 
 
 
-参考文章如下 (收录整理时间2022年8月5日),文档有时效，注意查看对应时间和版本信息
+**参考文章:**
+*如下 (收录整理时间2022年8月5~6日),文档有时效，注意查看对应时间和版本信息*
 
-[1] [nacos整合openfeign](https://www.jianshu.com/p/5f01ade994da)  
-[2] [Spring Cloud Hoxton.SR12 现已发布](https://www.xujun.org/note-136263.html)  
-[3] [spring-cloud-alibaba-dependencies版本问题](https://blog.51cto.com/u_15076224/3865887)  
-[4] [Spring Cloud Alibaba Reference Documentation](https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/en-us/index.html)  
-[5] [SpringCloud——OpenFeign详解](https://blog.csdn.net/weixin_50616848/article/details/124540101)  
+[1]   [nacos整合openfeign](https://www.jianshu.com/p/5f01ade994da)  
+[2]   [Spring Cloud Hoxton.SR12 现已发布](https://www.xujun.org/note-136263.html)  
+[3]   [spring-cloud-alibaba-dependencies版本问题](https://blog.51cto.com/u_15076224/3865887)  
+[4]   [Spring Cloud Alibaba Reference Documentation](https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/en-us/index.html)  
+[5]   [SpringCloud——OpenFeign详解](https://blog.csdn.net/weixin_50616848/article/details/124540101)  
+[6]   [Spring Cloud Gateway 服务网关的部署与使用详细介绍](https://blog.csdn.net/a745233700/article/details/122917167)  
+[7]   [Spring Cloud Gateway+Oauth2 实现统一认证和鉴权](https://blog.csdn.net/const_/article/details/123742701)  
+[8]   [SpringCloud+Gateway+Security 搭建微服务统一认证授权（附源码）](https://zhuanlan.zhihu.com/p/521038718)  
+[9]   [Spring cloud gateway 详解和配置使用](https://zhuanlan.zhihu.com/p/354236947)  
+[10] [Sentinel 简介](https://zhuanlan.zhihu.com/p/364009727)  
+
