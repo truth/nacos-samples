@@ -29,6 +29,7 @@
     <modules>
         <module>test-provider</module>
         <module>test-consumer</module>
+        <module>test-config</module>
     </modules>
     <dependencyManagement>
         <dependencies>
