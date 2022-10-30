@@ -21,9 +21,13 @@ public class ProviderApplication {
 
     @RestController
     public class EchoController {
-        @GetMapping(value = "/echo/{string}")
+        @GetMapping(value = "/provider/echo/{string}")
         public String echo(@PathVariable String string) {
             return "Hello Nacos Discovery " + string;
+        }
+        @GetMapping(value = "/")
+        public String index(@PathVariable String string) {
+            return "index";
         }
     }
 }

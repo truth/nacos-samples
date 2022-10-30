@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: boot-admin
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.20.14:8848
+#        namespace: 53ef9c9e-5f5d-417d-8589-e35faefc695f
+#        group: DEFAULT_GROUP
+        metadata:
+          user.name: "admin"
+          user.password: "nutshell"
+  security:
+    user:
+      name: "admin"
+      password: "nutshell"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  file: ./admin.log

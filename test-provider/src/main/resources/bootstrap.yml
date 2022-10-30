@@ -1,0 +1,33 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: demo-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.20.14:8848
+  #      namespace: 77613cbe-9303-4d79-983e-8e5aef69cc45
+  #      group: PM_DEV
+        metadata:
+          management:
+management:
+  health:
+    redis:
+      enabled: false
+    sentinel:
+      enabled: false
+    ldap:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  file:

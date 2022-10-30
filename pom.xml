@@ -31,6 +31,7 @@
         <module>test-consumer</module>
         <module>test-config</module>
         <module>test-gateway</module>
+        <module>test-spring-boot-admin</module>
     </modules>
     <dependencyManagement>
         <dependencies>
